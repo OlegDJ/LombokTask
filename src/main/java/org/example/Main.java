@@ -1,23 +1,9 @@
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
-import lombok.EqualsAndHashCode;
-
-@AllArgsConstructor
-@Getter
-@Setter
-@ToString
-@EqualsAndHashCode
-public class CarWithLombok {
-    private String model, brand, color;
-    private int year, price, quantity;
-}
+package org.example;
 
 class CarDemoWithLombok {
     public static void main(String[] args) {
         CarWithLombok CarWithLombok1 = new CarWithLombok("Mustang", "Ford", "black", 2025, 900_000, 10);
-        CarWithLombok CarWithLombok2 = new CarWithLombok("Sierra", "NotFord", "white", 1997, 300_000, 2);
+        CarWithLombok CarWithLombok2 = new CarWithLombok("Sierra", "Ford", "white", 1997, 300_000, 2);
         System.out.println(CarWithLombok1);
         System.out.println(CarWithLombok2);
         System.out.println(CarWithLombok1.getColor());
